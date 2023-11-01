@@ -10,6 +10,6 @@ public class HelloControler {
     @GetMapping("/hello")
     @ResponseBody
     public String hello(){
-        return "이거 어캐 하는거임?";
+        return "이거 어캐 하는거임??????";
     }
 }
