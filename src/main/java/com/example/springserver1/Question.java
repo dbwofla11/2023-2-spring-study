@@ -25,11 +25,9 @@ public class Question {
     @Column(length = 200)
     private String subject;
 
-    @Column(columnDefinition = "TEXT")
-    private String content;
-
-    @Column(columnDefinition = "TEXT")
-    private String User;
+    @Column( columnDefinition = "TEXT")
+    private String QuestionUser;
+    private String Questcontent;
 
     private LocalDateTime createDate;
 

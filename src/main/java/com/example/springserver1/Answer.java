@@ -16,11 +16,9 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(columnDefinition = "TEXT")
-    private String content;
-
-    @Column(columnDefinition = "TEXT")
-    private String User;
+    @Column( columnDefinition = "TEXT")
+    private String Answercontent;
+    private String AnswerUser;
 
     private LocalDateTime createDate;
 
@@ -31,7 +29,7 @@ public class Answer {
     @ManyToOne
     private Question question;
 }
-//
+
 //Id, content, createDate 속성은 질문 엔티티와 동일하므로 설명은 생략한다.
 //
 //        question 속성은 답변 엔티티에서 질문 엔티티를 참조하기 위해 추가했다.
