@@ -27,7 +27,9 @@ public class Question {
 
     @Column( columnDefinition = "TEXT")
     private String QuestionUser;
-    private String Questcontent;
+
+    @Column( columnDefinition = "TEXT")
+    private String content;
 
     private LocalDateTime createDate;
 
